@@ -106,7 +106,7 @@ const PrivacyPolicy: NextPage = () => {
               Si tienes preguntas sobre esta política de privacidad, contáctanos en:
             </p>
             <ul className="list-disc list-inside mb-4 space-y-2">
-              <li>Email: privacidad@pololos.cl</li>
+              <li>Email: contacto@pololitos.cl</li>
               <li>Dirección: Valdivia, Chile</li>
             </ul>
           </section>

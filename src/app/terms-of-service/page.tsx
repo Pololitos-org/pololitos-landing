@@ -134,7 +134,7 @@ const TermsOfService: NextPage = () => {
               Si tienes preguntas sobre estos términos, contáctanos en:
             </p>
             <ul className="list-disc list-inside mb-4 space-y-2">
-              <li>Email: legal@pololos.cl</li>
+              <li>Email: contacto@pololitos.cl</li>
               <li>Dirección: Valdivia, Chile</li>
             </ul>
           </section>
