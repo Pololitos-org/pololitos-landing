@@ -1,5 +1,6 @@
 // src/app/page.tsx
 import type { NextPage } from 'next'
+import Image from 'next/image'
 import { 
   Droplets,
   Sparkles,
@@ -14,6 +15,7 @@ import {
   MapPin,
   Edit
 } from 'lucide-react'
+import Link from 'next/link';
 
 const popularCategories = [
   { id: '1', name: 'Gasfitería', Icon: Droplets },
@@ -50,16 +52,12 @@ const Home: NextPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <div className="flex items-center space-x-3">
-              <svg className="h-10 w-10" viewBox="0 0 24 24" fill="none">
-                <path 
-                  d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z" 
-                  fill="#0052FF"
-                />
-                <path 
-                  d="M16 8c0 1.5-2 3-4 3s-4-1.5-4-3 2-3 4-3 4 1.5 4 3zm-4 4c-2 0-6 1-6 3v2h12v-2c0-2-4-3-6-3z" 
-                  fill="white"
-                />
-              </svg>
+              <Image 
+                src="/favicon.png" 
+                alt="Pololos Logo" 
+                width={80}
+                height={80}
+              />
               <span className="text-2xl font-bold text-indigo-600">Pololos</span>
             </div>
           </div>
@@ -220,8 +218,25 @@ const Home: NextPage = () => {
       {/* Footer */}
       <footer className="bg-gray-50 py-12 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center text-gray-500">
-            © 2024 Pololos. Todos los derechos reservados.
+          <div className="text-center">
+            <div className="flex justify-center space-x-6 mb-4">
+              <Link 
+                href="/privacy-policy" 
+                className="text-gray-500 hover:text-indigo-600 transition-colors"
+              >
+                Política de Privacidad
+              </Link>
+              <span className="text-gray-300">|</span>
+              <Link 
+                href="/terms-of-service" 
+                className="text-gray-500 hover:text-indigo-600 transition-colors"
+              >
+                Términos de Servicio
+              </Link>
+            </div>
+            <div className="text-gray-500">
+              © 2024 Pololos. Todos los derechos reservados.
+            </div>
           </div>
         </div>
       </footer>
