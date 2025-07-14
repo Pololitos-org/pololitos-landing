@@ -6,10 +6,8 @@ import {
   ArrowLeft, 
   Mail, 
   Clock, 
-  Database, 
   Shield, 
   Download, 
-  Settings, 
   UserX, 
   Trash2,
   AlertTriangle 
