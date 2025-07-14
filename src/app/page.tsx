@@ -219,7 +219,7 @@ const Home: NextPage = () => {
       <footer className="bg-gray-50 py-12 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="flex justify-center space-x-6 mb-4">
+            <div className="flex justify-center flex-wrap space-x-6 mb-4">
               <Link 
                 href="/privacy-policy" 
                 className="text-gray-500 hover:text-indigo-600 transition-colors"
@@ -232,6 +232,13 @@ const Home: NextPage = () => {
                 className="text-gray-500 hover:text-indigo-600 transition-colors"
               >
                 Términos de Servicio
+              </Link>
+              <span className="text-gray-300">|</span>
+              <Link 
+                href="/account-deletion" 
+                className="text-gray-500 hover:text-indigo-600 transition-colors"
+              >
+                Eliminación de Cuenta
               </Link>
             </div>
             <div className="text-gray-500">
