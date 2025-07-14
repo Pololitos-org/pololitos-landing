@@ -235,10 +235,10 @@ const Home: NextPage = () => {
               </Link>
               <span className="text-gray-300">|</span>
               <Link 
-                href="/account-deletion" 
+                href="/data-management" 
                 className="text-gray-500 hover:text-indigo-600 transition-colors"
               >
-                Eliminación de Cuenta
+                Gestión de Datos
               </Link>
             </div>
             <div className="text-gray-500">
