@@ -71,7 +71,7 @@ const AccountDeletion: NextPage = () => {
                   </a>
                 </li>
                 <li className="text-gray-700">
-                  <strong>Incluye en el asunto:</strong> "Solicitud de Eliminación de Cuenta - Pololos"
+                  <strong>Incluye en el asunto:</strong> Solicitud de Eliminación de Cuenta - Pololos
                 </li>
                 <li className="text-gray-700">
                   <strong>En el cuerpo del mensaje incluye:</strong>
