@@ -1,62 +1,39 @@
 // src/app/terms-of-service/page.tsx
 import type { NextPage } from 'next'
-import Link from 'next/link'
-import Image from 'next/image'
-import { ArrowLeft } from 'lucide-react'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 const TermsOfService: NextPage = () => {
   return (
     <main className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            <div className="flex items-center space-x-3">
-              <Image 
-                src="/favicon.png" 
-                alt="Pololos Logo" 
-                width={80}
-                height={80}
-              />
-              <span className="text-2xl font-bold text-indigo-600">Pololos</span>
-            </div>
-            <Link 
-              href="/"
-              className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors"
-            >
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Volver al inicio
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Header showBackButton />
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">Términos de Servicio</h1>
-        
-        <div className="prose prose-lg max-w-none text-gray-700">
-          <p className="text-gray-600 mb-8">
-            <strong>Última actualización:</strong> {new Date().toLocaleDateString('es-CL')}
-          </p>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h1 className="text-4xl md:text-5xl font-bricolage font-bold text-gray-900 mb-4">Términos de Servicio</h1>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Aceptación de los Términos</h2>
-            <p className="mb-4">
+        <p className="text-gray-600 font-nunito mb-12">
+          <strong>Última actualización:</strong> {new Date().toLocaleDateString('es-CL')}
+        </p>
+
+        <div className="space-y-10 font-nunito">
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bricolage font-bold text-gray-900 mb-4">1. Aceptación de los Términos</h2>
+            <p className="mb-4 text-gray-700 leading-relaxed">
               Al utilizar Pololos, aceptas estar sujeto a estos términos de servicio. Si no estás de acuerdo con alguna parte de estos términos, no debes usar nuestro servicio.
             </p>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Descripción del Servicio</h2>
-            <p className="mb-4">
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bricolage font-bold text-gray-900 mb-4">2. Descripción del Servicio</h2>
+            <p className="mb-4 text-gray-700 leading-relaxed">
               Pololos es una plataforma que conecta personas que necesitan servicios con profesionales locales en Valdivia, Chile. Facilitamos la comunicación y el pago, pero no somos empleadores ni empleados de ninguna de las partes.
             </p>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. Registro y Cuenta</h2>
-            <ul className="list-disc list-inside mb-4 space-y-2">
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bricolage font-bold text-gray-900 mb-4">3. Registro y Cuenta</h2>
+            <ul className="list-disc list-inside mb-4 space-y-2 text-gray-700">
               <li>Debes ser mayor de 18 años para usar nuestros servicios</li>
               <li>Debes proporcionar información precisa y actualizada</li>
               <li>Eres responsable de mantener la seguridad de tu cuenta</li>
@@ -64,12 +41,12 @@ const TermsOfService: NextPage = () => {
             </ul>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">4. Responsabilidades del Usuario</h2>
-            <p className="mb-4">
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bricolage font-bold text-gray-900 mb-4">4. Responsabilidades del Usuario</h2>
+            <p className="mb-4 text-gray-700 leading-relaxed">
               Como usuario de Pololos, te comprometes a:
             </p>
-            <ul className="list-disc list-inside mb-4 space-y-2">
+            <ul className="list-disc list-inside mb-4 space-y-2 text-gray-700">
               <li>Usar el servicio de manera legal y ética</li>
               <li>Proporcionar descripciones precisas de las tareas</li>
               <li>Tratar a otros usuarios con respeto</li>
@@ -78,12 +55,12 @@ const TermsOfService: NextPage = () => {
             </ul>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Responsabilidades del Prestador de Servicios</h2>
-            <p className="mb-4">
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bricolage font-bold text-gray-900 mb-4">5. Responsabilidades del Prestador de Servicios</h2>
+            <p className="mb-4 text-gray-700 leading-relaxed">
               Los prestadores de servicios se comprometen a:
             </p>
-            <ul className="list-disc list-inside mb-4 space-y-2">
+            <ul className="list-disc list-inside mb-4 space-y-2 text-gray-700">
               <li>Completar las tareas según lo acordado</li>
               <li>Mantener estándares profesionales de calidad</li>
               <li>Comunicarse de manera clara y oportuna</li>
@@ -91,9 +68,9 @@ const TermsOfService: NextPage = () => {
             </ul>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. Pagos y Tarifas</h2>
-            <ul className="list-disc list-inside mb-4 space-y-2">
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bricolage font-bold text-gray-900 mb-4">6. Pagos y Tarifas</h2>
+            <ul className="list-disc list-inside mb-4 space-y-2 text-gray-700">
               <li>Los pagos se procesan de manera segura a través de nuestra plataforma</li>
               <li>Pololos cobra una comisión por cada transacción completada</li>
               <li>Los reembolsos se manejan caso por caso</li>
@@ -101,12 +78,12 @@ const TermsOfService: NextPage = () => {
             </ul>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">7. Limitación de Responsabilidad</h2>
-            <p className="mb-4">
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bricolage font-bold text-gray-900 mb-4">7. Limitación de Responsabilidad</h2>
+            <p className="mb-4 text-gray-700 leading-relaxed">
               Pololos actúa como intermediario. No somos responsables por:
             </p>
-            <ul className="list-disc list-inside mb-4 space-y-2">
+            <ul className="list-disc list-inside mb-4 space-y-2 text-gray-700">
               <li>La calidad del trabajo realizado</li>
               <li>Daños o lesiones durante la prestación del servicio</li>
               <li>Disputas entre usuarios</li>
@@ -114,26 +91,26 @@ const TermsOfService: NextPage = () => {
             </ul>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. Resolución de Disputas</h2>
-            <p className="mb-4">
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bricolage font-bold text-gray-900 mb-4">8. Resolución de Disputas</h2>
+            <p className="mb-4 text-gray-700 leading-relaxed">
               En caso de disputas, recomendamos primero intentar resolver directamente entre las partes. Si esto no es posible, Pololos puede mediar, pero no garantizamos una resolución específica.
             </p>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Modificaciones</h2>
-            <p className="mb-4">
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bricolage font-bold text-gray-900 mb-4">9. Modificaciones</h2>
+            <p className="mb-4 text-gray-700 leading-relaxed">
               Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios importantes serán notificados a los usuarios con al menos 30 días de anticipación.
             </p>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Contacto</h2>
-            <p className="mb-4">
+          <section>
+            <h2 className="text-2xl md:text-3xl font-bricolage font-bold text-gray-900 mb-4">10. Contacto</h2>
+            <p className="mb-4 text-gray-700 leading-relaxed">
               Si tienes preguntas sobre estos términos, contáctanos en:
             </p>
-            <ul className="list-disc list-inside mb-4 space-y-2">
+            <ul className="list-disc list-inside mb-4 space-y-2 text-gray-700">
               <li>Email: contacto@pololitos.cl</li>
               <li>Dirección: Valdivia, Chile</li>
             </ul>
@@ -141,14 +118,7 @@ const TermsOfService: NextPage = () => {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-gray-50 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center text-gray-500">
-            © 2024 Pololos. Todos los derechos reservados.
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   )
 }
