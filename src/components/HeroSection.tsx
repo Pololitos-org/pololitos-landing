@@ -57,12 +57,50 @@ const HeroSection: React.FC = () => {
             </nav>
           </article>
 
-          {/* Visual - Placeholder */}
-          <div className="relative" role="img" aria-label="Profesionales de Pololitos brindando servicios">
-            <div className="aspect-square bg-gray-300 rounded-3xl flex items-center justify-center">
-              <p className="text-gray-500 text-center px-8">
-                Imagen: Cliente feliz usando la app + Pololo sonriendo
-              </p>
+          {/* Visual - Mockup de celular */}
+          <div className="relative" role="img" aria-label="App Pololitos en acción">
+            {/* Contenedor con decoración de fondo */}
+            <div className="relative">
+              {/* Círculo decorativo de fondo */}
+              <div className="absolute -inset-4 bg-gradient-to-br from-brand-lime/30 to-brand-blue/20 rounded-full blur-3xl"></div>
+              
+              {/* Línea de vuelo del pololo (decorativa) */}
+              <svg 
+                className="absolute -top-12 -left-8 w-64 h-64 text-brand-lime opacity-30"
+                viewBox="0 0 200 200"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path 
+                  d="M20,180 Q50,50 100,100 T180,20" 
+                  stroke="currentColor" 
+                  strokeWidth="8" 
+                  strokeLinecap="round"
+                  fill="none"
+                />
+                <circle cx="20" cy="180" r="8" fill="currentColor" />
+              </svg>
+
+              {/* Mockup del celular */}
+              <div className="relative z-10 mx-auto max-w-sm">
+                {/* Frame del celular */}
+                <div className="relative bg-gray-900 rounded-[3rem] p-3 shadow-2xl">
+                  {/* Notch */}
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-gray-900 rounded-b-3xl z-10"></div>
+                  
+                  {/* Pantalla */}
+                  <div className="relative bg-white rounded-[2.5rem] overflow-hidden aspect-[9/19.5]">
+                    <Image
+                      src="/assets/screenshot_pololitos.png" // Tu screenshot aquí
+                      alt="Captura de pantalla de la app Pololitos"
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

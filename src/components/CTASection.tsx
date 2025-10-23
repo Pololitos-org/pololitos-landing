@@ -17,10 +17,10 @@ const CTASection: React.FC = () => {
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl md:text-6xl font-bricolage font-bold text-white mb-6">
-          ¿Listo para solucionar?
+          ¿Listo/a para probar pololitos?
         </h2>
         <p className="text-xl text-blue-100 mb-12 font-nunito">
-          La solución a tus tareas pendientes está en la palma de tu mano
+          La solución está en la palma de tu mano.
         </p>
 
         {/* CTAs grandes */}

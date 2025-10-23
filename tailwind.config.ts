@@ -19,8 +19,8 @@ export default {
         'brand-purple': '#9d86fa',
       },
       fontFamily: {
-        'bricolage': ['Bricolage Grotesque', 'sans-serif'],
-        'nunito': ['Nunito Sans', 'sans-serif'],
+        bricolage: ['var(--font-bricolage)', 'sans-serif'],
+        nunito: ['var(--font-nunito)', 'sans-serif'],
       },
     },
   },
