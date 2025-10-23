@@ -59,7 +59,7 @@ const CommunitySection: React.FC = () => {
           <div className="bg-brand-lime p-6 rounded-2xl relative">
             <div className="absolute -top-3 -left-3 w-8 h-8 bg-brand-yellow rounded-full"></div>
             <p className="text-gray-900 mb-4 font-nunito">
-              "Excelente servicio. El gasfiter llegó puntual y resolvió el problema rápidamente. ¡100% recomendado!"
+              &ldquo;Excelente servicio. El gasfiter llegó puntual y resolvió el problema rápidamente. ¡100% recomendado!&rdquo;
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-gray-400 rounded-full"></div>
@@ -78,7 +78,7 @@ const CommunitySection: React.FC = () => {
           <div className="bg-brand-lime p-6 rounded-2xl relative">
             <div className="absolute -top-3 -left-3 w-8 h-8 bg-brand-yellow rounded-full"></div>
             <p className="text-gray-900 mb-4 font-nunito">
-              "Me ayudaron con la mudanza y fueron super cuidadosos con mis cosas. La plataforma es muy fácil de usar."
+              &ldquo;Me ayudaron con la mudanza y fueron super cuidadosos con mis cosas. La plataforma es muy fácil de usar.&rdquo;
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-gray-400 rounded-full"></div>
