@@ -1,32 +1,24 @@
+import { Bricolage_Grotesque, Nunito_Sans } from "next/font/google";
+import { defaultMetadata } from "./metadata";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bricolageGrotesque = Bricolage_Grotesque({
+  variable: "--font-bricolage",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
+  fallback: ['system-ui', 'arial']
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const nunitoSans = Nunito_Sans({
+  variable: "--font-nunito",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
+  fallback: ['system-ui', 'arial']
 });
 
-export const metadata: Metadata = {
-  title: "Pololitos: Encuentra trabajos cerca de ti",
-  description: "Encuentra quien haga una tarea por ti",
-  icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      { url: '/icon-16.png', type: 'image/png', sizes: '16x16' },
-      { url: '/icon-32.png', type: 'image/png', sizes: '32x32' },
-      { url: '/icon-64.png', type: 'image/png', sizes: '64x64' },
-    ],
-    apple: [
-      { url: '/apple-icon.png', sizes: '180x180' },
-    ],
-  }
-};
+export const metadata: Metadata = defaultMetadata;
 
 export default function RootLayout({
   children,
@@ -34,9 +26,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${bricolageGrotesque.variable} ${nunitoSans.variable} font-nunito antialiased`}
       >
         {children}
       </body>

@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow admin or private pages (if any)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Sitemaps
+Sitemap: https://www.pololitos.cl/sitemap.xml
