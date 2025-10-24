@@ -6,7 +6,7 @@ import HeroSection from '@/components/HeroSection'
 import ValuePropositionSection from '@/components/ValuePropositionSection'
 import HowItWorksSection from '@/components/HowItWorksSection'
 import CategoriesSection from '@/components/CategoriesSection'
-import CommunitySection from '@/components/CommunitySection'
+// import CommunitySection from '@/components/CommunitySection'
 import CTASection from '@/components/CTASection'
 import {
   OrganizationSchema,
