@@ -47,10 +47,10 @@ export const defaultMetadata: Metadata = {
     siteName: 'Pololitos',
     images: [
       {
-        url: '/assets/og-image.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Pololitos'
+        alt: 'Pololitos - Servicios del hogar en Valdivia'
       }
     ]
   },
@@ -58,7 +58,7 @@ export const defaultMetadata: Metadata = {
     card: 'summary_large_image',
     title: siteMetadata.title,
     description: siteMetadata.description,
-    images: ['/assets/twitter-image.jpg'],
+    images: ['/twitter-image.png'],
     creator: '@pololitos'
   },
   robots: {
@@ -74,21 +74,28 @@ export const defaultMetadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico' },
-      { url: '/icon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/icon-32x32.png', sizes: '32x32', type: 'image/png' }
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' }
     ],
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/svg+xml',
+        url: '/favicon.svg'
+      }
     ]
   },
   manifest: '/site.webmanifest',
   alternates: {
     canonical: siteMetadata.siteUrl
   },
-  verification: {
-    google: 'verification_code_here', // Agregar código de Google Search Console
-    // yandex: 'verification_code_here',
-    // bing: 'verification_code_here',
+  appleWebApp: {
+    capable: true,
+    title: 'Pololitos',
+    statusBarStyle: 'default'
   }
 }
