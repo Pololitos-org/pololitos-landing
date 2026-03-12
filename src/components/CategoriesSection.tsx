@@ -1,6 +1,5 @@
 // src/components/CategoriesSection.tsx
 import CategoryCard from './CategoryCard'
-import MoreCategoriesCard from './MoreCategoriesCard'
 import { categories } from '@/data/categories'
 
 const CategoriesSection: React.FC = () => {
