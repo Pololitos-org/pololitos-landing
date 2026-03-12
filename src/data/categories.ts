@@ -6,16 +6,14 @@ export interface Category {
 }
 
 export const categories: Category[] = [
-  { name: 'Gasfitería', icon: 'gasfiteria.svg' },
-  { name: 'Electricidad', icon: 'electricidad.svg' },
-  { name: 'Armado de Muebles', icon: 'armadomuebles.svg' },
-  { name: 'Limpieza', icon: 'limpieza.svg' },
-  { name: 'Pintura', icon: 'pintura.svg' },
-  { name: 'Jardinería', icon: 'jardineria.svg' },
-  { name: 'Control de Plagas', icon: 'controlplagas.svg' },
+  { name: 'Limpieza del hogar', icon: 'limpieza.svg' },
+  { name: 'Cuidado de niños', icon: 'seguridad.svg' },
+  { name: 'Carpintería', icon: 'armadomuebles.svg' },
+  { name: 'Cuidado de animales', icon: 'animales.svg' },
   { name: 'Reparaciones', icon: 'reparaciones.svg' },
-  { name: 'Seguridad', icon: 'seguridad.svg' },
-  { name: 'Climatización', icon: 'climatizacion.svg' },
-  { name: 'Tecnología', icon: 'tecnologia.svg' },
-  { name: 'Cuidado de Animales', icon: 'animales.svg' }
+  { name: 'Cuidado de adultos', icon: 'seguridad.svg' },
+  { name: 'Jardinería', icon: 'jardineria.svg' },
+  { name: 'Mudanzas', icon: 'armadomuebles.svg' },
+  { name: 'Pintura', icon: 'pintura.svg' },
+  { name: 'Otros', icon: 'tecnologia.svg' }
 ]
