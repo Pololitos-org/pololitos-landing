@@ -34,10 +34,10 @@ const HowItWorksSection: React.FC = () => {
                 <TbUserSearch className="w-10 h-10 text-brand-lime" />
               </div>
               <h3 className="text-2xl font-bricolage font-bold text-gray-900">
-                Elige al mejor pololo
+                Elige la mejor Oferta
               </h3>
               <p className="text-gray-600 font-nunito">
-                Compara perfiles, calificaciones y elige el que más te convenza
+                Compara perfiles, calificaciones y elige el trabajador que más te convenza
               </p>
             </div>
 

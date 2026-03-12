@@ -16,5 +16,6 @@ export const categories: Category[] = [
   { name: 'Reparaciones', icon: 'reparaciones.svg' },
   { name: 'Seguridad', icon: 'seguridad.svg' },
   { name: 'Climatización', icon: 'climatizacion.svg' },
-  { name: 'Tecnología', icon: 'tecnologia.svg' }
+  { name: 'Tecnología', icon: 'tecnologia.svg' },
+  { name: 'Cuidado de Animales', icon: 'animales.svg' }
 ]

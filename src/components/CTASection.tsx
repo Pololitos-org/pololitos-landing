@@ -25,22 +25,32 @@ const CTASection: React.FC = () => {
 
         {/* CTAs grandes */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <a href="#" className="hover:opacity-80 transition-opacity w-[220px] h-[70px]">
+          <a
+            href="https://apps.apple.com/cl/app/pololitos/id6746919263"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity h-[60px] md:h-[68px] w-auto"
+          >
             <Image
               src="/assets/app_store.svg"
               alt="Descargar en App Store"
-              width={220}
-              height={70}
-              className="w-full h-full object-contain"
+              width={200}
+              height={68}
+              className="h-full w-auto object-contain"
             />
           </a>
-          <a href="#" className="hover:opacity-80 transition-opacity w-[220px] h-[70px]">
+          <a
+            href="https://play.google.com/store/apps/details?id=cl.felipeslzar.pololitos"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity h-14 md:h-16 w-auto"
+          >
             <Image
               src="/assets/google_play.svg"
               alt="Disponible en Google Play"
-              width={220}
-              height={70}
-              className="w-full h-full object-contain"
+              width={200}
+              height={64}
+              className="h-full w-auto object-contain"
             />
           </a>
         </div>

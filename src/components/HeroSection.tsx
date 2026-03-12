@@ -25,32 +25,34 @@ const HeroSection: React.FC = () => {
             {/* CTAs de descarga */}
             <nav className="flex flex-col sm:flex-row gap-4 pt-4" aria-label="Descargar aplicación">
               <a
-                href="#"
-                className="hover:opacity-80 transition-opacity w-[200px] h-[60px] focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded-lg"
+                href="https://apps.apple.com/cl/app/pololitos/id6746919263"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity h-[52px] md:h-[60px] w-auto focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded-lg"
                 aria-label="Descargar Pololitos en App Store"
-                rel="noopener"
               >
                 <Image
                   src="/assets/app_store.svg"
                   alt="Descargar en App Store"
-                  width={200}
+                  width={180}
                   height={60}
-                  className="w-full h-full object-contain"
+                  className="h-full w-auto object-contain"
                   priority
                 />
               </a>
               <a
-                href="#"
-                className="hover:opacity-80 transition-opacity w-[200px] h-[60px] focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded-lg"
+                href="https://play.google.com/store/apps/details?id=cl.felipeslzar.pololitos"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity h-12 md:h-14 w-auto focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 rounded-lg"
                 aria-label="Descargar Pololitos en Google Play"
-                rel="noopener"
               >
                 <Image
                   src="/assets/google_play.svg"
                   alt="Disponible en Google Play"
-                  width={200}
-                  height={60}
-                  className="w-full h-full object-contain"
+                  width={180}
+                  height={56}
+                  className="h-full w-auto object-contain"
                   priority
                 />
               </a>
@@ -63,19 +65,19 @@ const HeroSection: React.FC = () => {
             <div className="relative">
               {/* Círculo decorativo de fondo */}
               <div className="absolute -inset-4 bg-gradient-to-br from-brand-lime/30 to-brand-blue/20 rounded-full blur-3xl"></div>
-              
+
               {/* Línea de vuelo del pololo (decorativa) */}
-              <svg 
+              <svg
                 className="absolute -top-12 -left-8 w-64 h-64 text-brand-lime opacity-30"
                 viewBox="0 0 200 200"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
               >
-                <path 
-                  d="M20,180 Q50,50 100,100 T180,20" 
-                  stroke="currentColor" 
-                  strokeWidth="8" 
+                <path
+                  d="M20,180 Q50,50 100,100 T180,20"
+                  stroke="currentColor"
+                  strokeWidth="8"
                   strokeLinecap="round"
                   fill="none"
                 />
@@ -88,7 +90,7 @@ const HeroSection: React.FC = () => {
                 <div className="relative bg-gray-900 rounded-[3rem] p-3 shadow-2xl">
                   {/* Notch */}
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-gray-900 rounded-b-3xl z-10"></div>
-                  
+
                   {/* Pantalla */}
                   <div className="relative bg-white rounded-[2.5rem] overflow-hidden aspect-[9/19.5]">
                     <Image

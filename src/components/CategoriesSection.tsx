@@ -34,9 +34,6 @@ const CategoriesSection: React.FC = () => {
                 <meta itemProp="position" content={String(idx + 1)} />
               </li>
             ))}
-            <li>
-              <MoreCategoriesCard />
-            </li>
           </ul>
         </nav>
       </div>
