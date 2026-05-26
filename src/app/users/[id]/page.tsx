@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { use } from "react";
 
-export default function TaskRedirectPage({
+export default function UserRedirectPage({
   params,
 }: {
   params: Promise<{ id: string }>;
@@ -13,9 +13,8 @@ export default function TaskRedirectPage({
   const { id } = use(params);
 
   useEffect(() => {
-    // Intentar abrir la app nativa (deep link)
     const timeout = setTimeout(() => {
-      window.location.href = `pololitos://task/${id}`;
+      window.location.href = `pololitos://users/${id}`;
     }, 100);
     return () => clearTimeout(timeout);
   }, [id]);
@@ -36,12 +35,12 @@ export default function TaskRedirectPage({
           Redirigiendo a Pololitos...
         </h1>
         <p className="text-gray-500 mb-8 max-w-sm leading-relaxed">
-          Si no tienes Pololitos instalada, descarga nuestra app gratuita para poder ver los detalles de este pololo y postular.
+          Si no tienes Pololitos instalada, descarga nuestra app gratuita para ver el perfil de este usuario.
         </p>
 
         <div className="flex flex-col gap-3 w-full">
           <a
-            href={`pololitos://task/${id}`}
+            href={`pololitos://users/${id}`}
             className="w-full py-4 px-4 bg-[#4949E9] hover:bg-[#3b3bcf] text-white font-semibold rounded-xl transition-colors shadow-sm"
           >
             Abrir en la app

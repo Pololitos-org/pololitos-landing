@@ -111,7 +111,7 @@ const HeroSection: React.FC = () => {
                       className="w-full h-full border-0"
                       frameBorder={0}
                       scrolling="no"
-                      allowtransparency="true"
+                      allowTransparency={true}
                       allow="encrypted-media"
                       title="Instagram Reel Pololitos"
                     />
