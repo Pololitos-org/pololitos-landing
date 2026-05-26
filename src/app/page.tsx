@@ -6,7 +6,7 @@ import HeroSection from '@/components/HeroSection'
 import ValuePropositionSection from '@/components/ValuePropositionSection'
 import HowItWorksSection from '@/components/HowItWorksSection'
 import CategoriesSection from '@/components/CategoriesSection'
-// import CommunitySection from '@/components/CommunitySection'
+import SocialVideoSection from '@/components/SocialVideoSection'
 import CTASection from '@/components/CTASection'
 import {
   OrganizationSchema,
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         <ValuePropositionSection />
         <HowItWorksSection />
         <CategoriesSection />
-        {/* <CommunitySection /> */}
+        <SocialVideoSection />
         <CTASection />
         <Footer />
       </main>

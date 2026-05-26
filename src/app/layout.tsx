@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Nunito_Sans } from "next/font/google";
 import { defaultMetadata } from "./metadata";
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
+import Script from "next/script";
 
 // Configurar fuentes de Google
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -37,6 +39,20 @@ export default function RootLayout({
       <body className="font-nunito antialiased">
         {children}
       </body>
+      {process.env.NEXT_PUBLIC_GA_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+      )}
+      {process.env.NEXT_PUBLIC_CLARITY_ID && (
+        <Script id="clarity-script" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "${process.env.NEXT_PUBLIC_CLARITY_ID}");
+          `}
+        </Script>
+      )}
     </html>
   );
 }

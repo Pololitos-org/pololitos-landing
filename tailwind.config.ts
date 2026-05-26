@@ -22,6 +22,26 @@ export default {
         bricolage: ['var(--font-bricolage)', 'sans-serif'],
         nunito: ['var(--font-nunito)', 'sans-serif'],
       },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-12px)' },
+        },
+        'float-slow': {
+          '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+          '50%': { transform: 'translateY(-18px) rotate(4deg)' },
+        },
+        'fade-up': {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'float': 'float 4s ease-in-out infinite',
+        'float-slow': 'float-slow 7s ease-in-out infinite',
+        'float-delayed': 'float 5s ease-in-out 1.8s infinite',
+        'fade-up': 'fade-up 0.6s ease-out forwards',
+      },
     },
   },
   plugins: [],

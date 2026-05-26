@@ -1,4 +1,5 @@
 // src/components/ValuePropositionSection.tsx
+import Image from 'next/image'
 import {
   TbShieldLock,
   TbUserCheck,
@@ -12,12 +13,19 @@ const ValuePropositionSection: React.FC = () => {
   return (
     <section className="relative">
       <div className="grid md:grid-cols-2">
-        {/* Bloque 1: Para Clientes */}
-        <div className="bg-brand-blue text-white py-16 px-8 md:px-12">
-          <div className="max-w-lg mx-auto space-y-6">
-            <h2 className="text-4xl font-bricolage font-bold">
+
+        {/* Bloque Para Clientes — azul */}
+        <div className="relative bg-brand-blue text-white py-16 px-8 md:px-12 overflow-hidden">
+          {/* Decorative isotipo corner */}
+          <div className="absolute -bottom-10 -right-10 opacity-10 pointer-events-none" aria-hidden="true">
+            <Image src="/assets/ISOTIPO-SOBREAZUL.svg" alt="" width={160} height={160} />
+          </div>
+
+          <div className="relative z-10 max-w-lg mx-auto space-y-6">
+            {/* Speech bubble heading */}
+            <div className="inline-block bg-brand-lime text-brand-blue font-bricolage font-extrabold text-3xl md:text-4xl px-7 py-4 rounded-[2.5rem] rounded-bl-sm shadow-lg leading-tight">
               Tu proyecto en las mejores manos
-            </h2>
+            </div>
 
             <div className="space-y-6 pt-4">
               <div className="flex items-start gap-4">
@@ -26,7 +34,7 @@ const ValuePropositionSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bricolage font-semibold text-lg mb-1">Seguridad en tus pagos</h3>
-                  <p className="text-blue-100">Tu dinero protegido hasta que el trabajo esté completado</p>
+                  <p className="text-blue-100 font-nunito">Tu dinero protegido hasta que el trabajo esté completado</p>
                 </div>
               </div>
 
@@ -36,7 +44,7 @@ const ValuePropositionSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bricolage font-semibold text-lg mb-1">Profesionales verificados</h3>
-                  <p className="text-blue-100">Todos nuestros pololeros pasan por un proceso de verificación</p>
+                  <p className="text-blue-100 font-nunito">Todos nuestros pololeros pasan por un proceso de verificación</p>
                 </div>
               </div>
 
@@ -46,19 +54,23 @@ const ValuePropositionSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bricolage font-semibold text-lg mb-1">Apoyo a la comunidad local</h3>
-                  <p className="text-blue-100">Conecta con profesionales de tu ciudad</p>
+                  <p className="text-blue-100 font-nunito">Conecta con profesionales de tu ciudad</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Bloque 2: Para Pololeros */}
-        <div className="bg-brand-lime text-brand-blue py-16 px-8 md:px-12">
-          <div className="max-w-lg mx-auto space-y-6">
-            <h2 className="text-4xl font-bricolage font-bold">
+        {/* Bloque Para Pololeros — lima */}
+        <div className="relative bg-brand-lime text-brand-blue py-16 px-8 md:px-12 overflow-hidden">
+          {/* Decorative circle */}
+          <div className="absolute -top-10 -right-10 w-40 h-40 bg-brand-blue rounded-full opacity-8 pointer-events-none" />
+
+          <div className="relative z-10 max-w-lg mx-auto space-y-6">
+            {/* Speech bubble heading */}
+            <div className="inline-block bg-brand-blue text-white font-bricolage font-extrabold text-3xl md:text-4xl px-7 py-4 rounded-[2.5rem] rounded-bl-sm shadow-lg leading-tight">
               Sé tu propio jefe. Tu agenda, tus ingresos.
-            </h2>
+            </div>
 
             <div className="space-y-6 pt-4">
               <div className="flex items-start gap-4">
@@ -67,7 +79,7 @@ const ValuePropositionSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bricolage font-semibold text-lg mb-1">Flexibilidad total</h3>
-                  <p className="text-blue-900">Trabaja cuando quieras, donde quieras</p>
+                  <p className="text-blue-900 font-nunito">Trabaja cuando quieras, donde quieras</p>
                 </div>
               </div>
 
@@ -77,7 +89,7 @@ const ValuePropositionSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bricolage font-semibold text-lg mb-1">Aumenta tus ingresos</h3>
-                  <p className="text-blue-900">Accede a nuevos clientes y proyectos cada día</p>
+                  <p className="text-blue-900 font-nunito">Accede a nuevos clientes y proyectos cada día</p>
                 </div>
               </div>
 
@@ -87,12 +99,13 @@ const ValuePropositionSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bricolage font-semibold text-lg mb-1">Encuentra clientes cerca de ti</h3>
-                  <p className="text-blue-900">Trabajos en tu zona, sin perder tiempo en traslados</p>
+                  <p className="text-blue-900 font-nunito">Trabajos en tu zona, sin perder tiempo en traslados</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
   )
